@@ -66,7 +66,17 @@ if (isset ($_POST["signupPassword"])) {
 
       //on tühi
         $signupPasswordError = "Väli on kohustuslik!";
-    }
+    } else {
+
+			// parool ei olnud tühi
+
+			if ( strlen($_POST["signupPassword"]) < 8 ) {
+
+				$signupPasswordError = "Parool peab olema vähemalt 8 tähemärki pikk!";
+
+			}
+
+		}
   }
 
 $recaptchaError = "";
