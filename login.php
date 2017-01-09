@@ -1,3 +1,10 @@
+/*
+
+Leht on aadressil http://puiestik.ee/kool/WebProg/I1/login.php
+
+*/
+
+
 <?php
 
 //var_dump($_GET);
